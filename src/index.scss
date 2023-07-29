@@ -1,4 +1,8 @@
-$main-light-clr: #fdfdfd;
+$main-light-clr: #eae8ff;
+$main-dark-clr: #070608;
+$accent-clr-1: #fadf7f;
+$neutral-light-clr-1: #adacb5;
+$neutral-dark-clr-1: #2d3142;
 
 *,
 ::after,
@@ -9,6 +13,7 @@ $main-light-clr: #fdfdfd;
 
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: $neutral-dark-clr-1;
 }
 
 ul,
