@@ -3,8 +3,19 @@
 .sectionHero {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 40px;
   color: $main-light-clr;
+}
+
+.heroP {
+  font-size: 50px;
+  color: $neutral-light-clr-1;
+}
+
+.heroPosition {
+  font-size: 70px;
+  color: $accent-clr-1;
 }
