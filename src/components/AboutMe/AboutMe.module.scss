@@ -1,10 +1,106 @@
 @import 'index.scss';
 
+$width-phone: 200px;
+$width-tablet: 400px;
+$width-desktop: 600px;
+
+$height-phone: 300px;
+$height-tablet: 500px;
+$height-desktop: 700px;
+
 .sectionAboutMe {
-  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+
+  background-color: $neutral-dark-clr-2;
+}
+
+.boxInfo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: $default-margin-phone;
+
+  @media screen and (min-width: 768px) {
+    gap: $default-margin-tablet;
+  }
+
+  @media screen and (min-width: 1440px) {
+    gap: $default-margin-desktop;
+  }
+}
+
+.boxImage {
+  width: $width-phone;
+  height: $height-phone;
+  border: 4px solid $accent-clr-1;
+
+  @media screen and (min-width: 768px) {
+    width: $width-tablet;
+    height: $height-tablet;
+    border: 6px solid $accent-clr-1;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: $width-desktop;
+    height: $height-desktop;
+    border: 8px solid $accent-clr-1;
+  }
+}
+
+.boxText {
+  color: $main-light-clr;
+}
+
+.myName {
+  font-size: 24px;
+  font-weight: 400;
+
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 36px;
+  }
+}
+
+.accentText {
+  color: $accent-clr-1;
+}
+
+.description {
+  font-size: 16px;
+  max-width: 300px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 500px;
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 700px;
+    font-size: 28px;
+  }
+}
+
+.skillsTitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: $accent-clr-1;
+}
+
+.listSkills {
+  list-style-type: circle;
+}
+
+.skill {
+  color: $accent-clr-1;
+}
+
+.accentPoint {
   color: $main-light-clr;
 }

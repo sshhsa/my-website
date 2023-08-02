@@ -1,21 +1,88 @@
 @import 'index.scss';
 
+$text-position-phone: 30px;
+$text-position-tablet: 60px;
+$text-position-desktop: 90px;
+
 .sectionHero {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   font-size: 40px;
   color: $main-light-clr;
+  background-color: $neutral-dark-clr-1;
 }
 
 .heroP {
-  font-size: 50px;
+  font-weight: 800;
   color: $neutral-light-clr-1;
+
+  font-size: 22px;
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 70px;
+  }
 }
 
 .heroPosition {
-  font-size: 70px;
+  text-align: center;
+  font-size: $text-position-phone;
+  font-weight: 800;
+  color: $main-light-clr;
+
+  @media screen and (min-width: 768px) {
+    font-size: $text-position-tablet;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: $text-position-desktop;
+  }
+}
+
+.point {
+  font-size: $text-position-phone;
   color: $accent-clr-1;
+
+  @media screen and (min-width: 768px) {
+    font-size: $text-position-tablet;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: $text-position-desktop;
+  }
+}
+
+.buttonHero {
+  margin-top: $default-margin-phone;
+  padding: 8px 16px;
+
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  color: $main-light-clr;
+  background-color: $accent-clr-1;
+
+  @media screen and (min-width: 768px) {
+    padding: 12px 24px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 16px 32px;
+  }
+}
+
+.buttonHero:hover,
+.buttonHero:focus {
+  background-color: $main-dark-clr;
 }

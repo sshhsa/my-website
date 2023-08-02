@@ -2,7 +2,12 @@ $main-light-clr: #fbfbfb;
 $main-dark-clr: #070608;
 $accent-clr-1: #ff825a;
 $neutral-light-clr-1: #adacb5;
-$neutral-dark-clr-1: #363636;
+$neutral-dark-clr-1: #262626;
+$neutral-dark-clr-2: #101010;
+
+$default-margin-phone: 24px;
+$default-margin-tablet: 48px;
+$default-margin-desktop: 72px;
 
 *,
 ::after,
@@ -13,7 +18,6 @@ $neutral-dark-clr-1: #363636;
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: $neutral-dark-clr-1;
 }
 
 ul,
@@ -25,4 +29,16 @@ img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+section {
+  padding: $default-margin-phone 0px;
+
+  @media screen and (min-width: 768px) {
+    padding: $default-margin-tablet 0px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: $default-margin-desktop 0px;
+  }
 }

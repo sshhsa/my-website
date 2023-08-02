@@ -7,16 +7,16 @@ export const Header = () => {
     <header className={scss.sectionCeil}>
       <Container>
         <ul className={scss.headerList}>
-          <li>
+          <li className={scss.headerItem}>
             <ButtonHeader buttonValue="About me" />
           </li>
-          <li>
+          <li className={scss.headerItem}>
             <ButtonHeader buttonValue="Skills" />
           </li>
-          <li>
+          <li className={scss.headerItem}>
             <ButtonHeader buttonValue="Portfolio" />
           </li>
-          <li>
+          <li className={scss.headerItem}>
             <ButtonHeader buttonValue="Contact" />
           </li>
         </ul>

@@ -1,0 +1,21 @@
+@import 'index.scss';
+
+.titleCategory {
+  margin-top: $default-margin-phone;
+  margin-bottom: $default-margin-phone;
+  font-size: 32px;
+  font-weight: 500;
+  color: $accent-clr-1;
+
+  @media screen and (min-width: 768px) {
+    margin-top: $default-margin-tablet;
+    margin-bottom: $default-margin-tablet;
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-top: $default-margin-desktop;
+    margin-bottom: $default-margin-desktop;
+    font-size: 64px;
+  }
+}
