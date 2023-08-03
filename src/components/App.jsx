@@ -1,19 +1,23 @@
-import { Header } from './Header/Header';
+import { Routes, Route } from 'react-router-dom';
+import SharedLayout from './SharedLayout/SharedLayout';
 import { Hero } from './Hero/Hero';
-import { AboutMe } from './AboutMe/AboutMe';
 import { Skills } from './Skills/Skills';
+import { AboutMe } from './AboutMe/AboutMe';
+import { NotFound } from './NotFound/NotFound';
 import { Portfolio } from './Portfolio/Portfolio';
 import { ContactMe } from './ContactMe/ContactMe';
 
 export const App = () => {
   return (
-    <>
-      <Header />
-      <Hero />
-      <AboutMe />
-      <Skills />
-      <Portfolio />
-      <ContactMe />
-    </>
+    <Routes>
+      <Route path="/" element={<SharedLayout />}>
+        <Route index element={<Hero />} />
+        <Route path="about" element={<AboutMe />} />
+        <Route path="skills" element={<Skills />} />
+        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="contact" element={<ContactMe />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
   );
 };

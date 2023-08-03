@@ -15,7 +15,7 @@ export const AboutMe = () => {
             I'm Full-Stack developer, and i am very passionate and dedicated to
             my work with 1 year Experience.
           </p>
-          <h3 clasName={scss.skillsTitle}>My skills</h3>
+          <h3 className={scss.skillsTitle}>My skills</h3>
           <ul className={scss.listSkills}>
             <li className={scss.skill}>
               <span className={scss.accentPoint}>HTML</span>

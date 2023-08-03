@@ -8,16 +8,19 @@ export const Header = () => {
       <Container>
         <ul className={scss.headerList}>
           <li className={scss.headerItem}>
-            <ButtonHeader buttonValue="About me" />
+            <ButtonHeader buttonValue="Home" link="/" />
           </li>
           <li className={scss.headerItem}>
-            <ButtonHeader buttonValue="Skills" />
+            <ButtonHeader buttonValue="About me" link="/about" />
           </li>
           <li className={scss.headerItem}>
-            <ButtonHeader buttonValue="Portfolio" />
+            <ButtonHeader buttonValue="Skills" link="/skills" />
           </li>
           <li className={scss.headerItem}>
-            <ButtonHeader buttonValue="Contact" />
+            <ButtonHeader buttonValue="Portfolio" link="/portfolio" />
+          </li>
+          <li className={scss.headerItem}>
+            <ButtonHeader buttonValue="Contact Me" link="/contact" />
           </li>
         </ul>
       </Container>
