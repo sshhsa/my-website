@@ -21,8 +21,8 @@ function SharedLayout() {
   return (
     <>
       <Header />
-      <Suspense fallback={<div>Loading ...</div>}>
-        {transitions((props, item, key) => (
+      <Suspense fallback={<div>Loading...</div>}>
+        {transitions((props, _, key) => (
           <animated.div key={key} style={props}>
             <Outlet />
           </animated.div>

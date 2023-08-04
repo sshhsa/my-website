@@ -2,8 +2,12 @@
 
 .buttonHeader {
   padding: 8px 16px;
+
+  font-size: 14px;
+  font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+
   border: none;
   outline: none;
   cursor: pointer;
@@ -14,10 +18,12 @@
 
   @media screen and (min-width: 768px) {
     padding: 12px 24px;
+    font-size: 16px;
   }
 
   @media screen and (min-width: 1440px) {
     padding: 16px 32px;
+    font-size: 18px;
   }
 }
 

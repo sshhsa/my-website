@@ -1,9 +1,8 @@
 $main-light-clr: #fbfbfb;
-$main-dark-clr: #070608;
-$accent-clr-1: #ff825a;
 $neutral-light-clr-1: #adacb5;
 $neutral-dark-clr-1: #262626;
 $neutral-dark-clr-2: #101010;
+$accent-clr-1: #ff825a;
 
 $default-margin-phone: 24px;
 $default-margin-tablet: 48px;
@@ -41,4 +40,8 @@ section {
   @media screen and (min-width: 1440px) {
     padding: $default-margin-desktop 0px;
   }
+}
+
+#shadow-host-companion {
+  display: none;
 }
