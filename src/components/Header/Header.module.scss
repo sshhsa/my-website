@@ -15,9 +15,13 @@
 
 .headerList {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-
   gap: 10px;
-  max-width: 500px;
+
+  @media screen and (max-width: 768px) {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
 }

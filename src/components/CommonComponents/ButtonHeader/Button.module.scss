@@ -16,6 +16,7 @@
 
   color: $main-light-clr;
   background-color: transparent;
+  transition: color $animation-medium;
 
   @media screen and (min-width: 768px) {
     padding: 12px 24px;
@@ -29,6 +30,10 @@
 
 .buttonHeader:hover,
 .buttonHeader:focus {
+  color: $neutral-light-clr-1;
+}
+
+.active {
   color: $accent-clr-1;
 }
 
@@ -41,7 +46,9 @@
   display: block;
   height: 3px;
   width: 100%;
-  border-radius: $default-brd-rad;
+
+  border-top-left-radius: $default-brd-rad;
+  border-top-right-radius: $default-brd-rad;
 
   color: $accent-clr-1;
   background-color: $accent-clr-1;

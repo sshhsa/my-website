@@ -1,16 +1,16 @@
 @import 'index.scss';
 
-$width-phone: 150px;
-$width-tablet: 300px;
-$width-desktop: 450px;
+$width-phone: 100px;
+$width-tablet: 200px;
+$width-desktop: 500px;
 
-$height-phone: 200px;
-$height-tablet: 400px;
-$height-desktop: 600px;
+$height-phone: 150px;
+$height-tablet: 300px;
+$height-desktop: 700px;
 
-$title-phone: 20px;
-$title-tablet: 24px;
-$title-desktop: 28px;
+$title-phone: 22px;
+$title-tablet: 26px;
+$title-desktop: 30px;
 
 .sectionAboutMe {
   display: flex;
@@ -26,9 +26,15 @@ $title-desktop: 28px;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: $default-margin-phone;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 375px) {
+    gap: $default-margin-phone;
+  }
+  @media screen and (min-width: 375px) {
+    justify-content: flex-start;
+  }
+
+  @media screen and (max-width: 768px) {
     gap: $default-margin-tablet;
   }
 
@@ -38,18 +44,46 @@ $title-desktop: 28px;
 }
 
 .boxImage {
+  position: relative;
+
   width: $width-phone;
   height: $height-phone;
   border: 4px dashed $accent-clr-1;
+  margin-bottom: $default-margin-phone;
 
   @media screen and (min-width: 768px) {
     width: $width-tablet;
     height: $height-tablet;
+    margin-bottom: $default-margin-tablet;
   }
 
   @media screen and (min-width: 1440px) {
     width: $width-desktop;
     height: $height-desktop;
+    margin-bottom: $default-margin-desktop;
+  }
+}
+
+.myImage {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  width: $width-phone;
+  height: $height-phone;
+
+  background-color: $accent-clr-1;
+
+  @media screen and (min-width: 768px) {
+    width: $width-tablet;
+    height: $height-tablet;
+    margin-bottom: $default-margin-tablet;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: $width-desktop;
+    height: $height-desktop;
+    margin-bottom: $default-margin-desktop;
   }
 }
 
@@ -58,6 +92,7 @@ $title-desktop: 28px;
 }
 
 .myName {
+  margin-bottom: 15px;
   font-size: $title-phone;
   font-weight: 400;
 
@@ -74,9 +109,26 @@ $title-desktop: 28px;
   color: $accent-clr-1;
 }
 
+.boxDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.boxDescription :nth-child(even) {
+  text-align: end;
+}
+
 .description {
-  font-size: $text-font-phone;
   max-width: 300px;
+  padding: 5px;
+
+  font-size: $text-font-phone;
+  border-radius: $default-brd-rad;
+
+  background-color: $neutral-dark-clr-1;
 
   @media screen and (min-width: 768px) {
     max-width: 500px;
