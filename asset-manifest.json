@@ -1,13 +1,21 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.de4b1bf2.css",
+    "main.css": "/my-website/static/css/main.baa29e26.css",
     "main.js": "/my-website/static/js/main.4ab468db.js",
+    "static/media/KreadonVF.ttf": "/my-website/static/media/KreadonVF.54091657633572fc33fa.ttf",
+    "static/media/Kreadon-EB.otf": "/my-website/static/media/Kreadon-EB.9f1c39f77033aa4cf1ed.otf",
+    "static/media/Kreadon-B.otf": "/my-website/static/media/Kreadon-B.6b43769cad3e4455d7a0.otf",
+    "static/media/Kreadon-D.otf": "/my-website/static/media/Kreadon-D.697dc349861b857e56b1.otf",
+    "static/media/Kreadon-L.otf": "/my-website/static/media/Kreadon-L.9601ea62f69d1072cc88.otf",
+    "static/media/Kreadon-R.otf": "/my-website/static/media/Kreadon-R.a3574d7db9492974d8d3.otf",
+    "static/media/Kreadon-EL.otf": "/my-website/static/media/Kreadon-EL.bc0cb868b0be8a0f3334.otf",
+    "static/media/Kreadon-M.otf": "/my-website/static/media/Kreadon-M.da8c537b3c85c896ebb3.otf",
     "index.html": "/my-website/index.html",
-    "main.de4b1bf2.css.map": "/my-website/static/css/main.de4b1bf2.css.map",
+    "main.baa29e26.css.map": "/my-website/static/css/main.baa29e26.css.map",
     "main.4ab468db.js.map": "/my-website/static/js/main.4ab468db.js.map"
   },
   "entrypoints": [
-    "static/css/main.de4b1bf2.css",
+    "static/css/main.baa29e26.css",
     "static/js/main.4ab468db.js"
   ]
 }
