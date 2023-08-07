@@ -5,6 +5,11 @@ $text-position-tablet: 60px;
 $text-position-desktop: 90px;
 
 .sectionHero {
+  color: $main-light-clr;
+  background-color: $neutral-dark-clr-1;
+}
+
+.boxHero {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -12,8 +17,6 @@ $text-position-desktop: 90px;
   align-items: center;
 
   font-size: 40px;
-  color: $main-light-clr;
-  background-color: $neutral-dark-clr-1;
 }
 
 .heroP {

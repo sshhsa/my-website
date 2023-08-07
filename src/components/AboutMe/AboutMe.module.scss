@@ -12,10 +12,6 @@ $title-phone: 20px;
 $title-tablet: 24px;
 $title-desktop: 28px;
 
-$text-font-phone: 18px;
-$text-font-tablet: 20px;
-$text-font-desktop: 22px;
-
 .sectionAboutMe {
   display: flex;
   flex-direction: column;
@@ -91,43 +87,4 @@ $text-font-desktop: 22px;
     max-width: 700px;
     font-size: $text-font-desktop;
   }
-}
-
-.skillsTitle {
-  margin-top: $default-margin-phone;
-  font-size: $title-phone;
-  font-weight: 500;
-  color: $accent-clr-1;
-
-  @media screen and (min-width: 768px) {
-    margin-top: $default-margin-tablet;
-    font-size: $title-tablet;
-  }
-
-  @media screen and (min-width: 1440px) {
-    margin-top: $default-margin-desktop;
-    font-size: $title-desktop;
-  }
-}
-
-.listSkills {
-  margin-top: 10px;
-  list-style-type: circle;
-}
-
-.skill {
-  font-size: $text-font-phone;
-  color: $accent-clr-1;
-
-  @media screen and (min-width: 768px) {
-    font-size: $text-font-tablet;
-  }
-
-  @media screen and (min-width: 1440px) {
-    font-size: $text-font-desktop;
-  }
-}
-
-.valueSkill {
-  color: $main-light-clr;
 }

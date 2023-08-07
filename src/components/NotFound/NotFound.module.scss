@@ -1,0 +1,13 @@
+@import 'index.scss';
+
+.sectionNotFound {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 40px;
+  color: $main-light-clr;
+  background-color: $neutral-dark-clr-1;
+}
