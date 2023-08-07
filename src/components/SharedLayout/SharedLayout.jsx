@@ -9,14 +9,17 @@ function SharedLayout() {
   const transitions = useTransition(location.pathname, {
     from: {
       transform: 'translateX(100%)',
+      // transform: 'scale(1.5)',
       opacity: 0,
     },
     enter: {
       transform: 'translateX(0%)',
+      // transform: 'scale(1)',
       opacity: 1,
     },
     leave: {
       transform: 'translateX(-100%)',
+      // transform: 'scale(1.5)',
       opacity: 0,
     },
   });

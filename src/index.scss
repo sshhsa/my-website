@@ -1,3 +1,5 @@
+@import './fonts/fonts.scss';
+
 $main-light-clr: #fbfbfb;
 $neutral-light-clr-1: #adacb5;
 $neutral-dark-clr-1: #262626;
@@ -12,6 +14,11 @@ $text-font-phone: 18px;
 $text-font-tablet: 20px;
 $text-font-desktop: 22px;
 
+$default-brd-rad: 4px;
+$animation-fast: 400ms cubic-bezier(0.19, 1, 0.22, 1);
+$animation-meadium: 800ms cubic-bezier(0.19, 1, 0.22, 1);
+$animation-slow: 1200ms cubic-bezier(0.19, 1, 0.22, 1);
+
 *,
 ::after,
 ::before {
@@ -20,7 +27,7 @@ $text-font-desktop: 22px;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Kreadon-M';
 }
 
 ul,

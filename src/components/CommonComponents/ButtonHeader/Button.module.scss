@@ -1,6 +1,7 @@
 @import 'index.scss';
 
 .buttonHeader {
+  position: relative;
   padding: 8px 16px;
 
   font-size: 14px;
@@ -31,6 +32,17 @@
   color: $accent-clr-1;
 }
 
-.active {
+.active:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  content: '';
+  display: block;
+  height: 3px;
+  width: 100%;
+  border-radius: $default-brd-rad;
+
   color: $accent-clr-1;
+  background-color: $accent-clr-1;
 }
