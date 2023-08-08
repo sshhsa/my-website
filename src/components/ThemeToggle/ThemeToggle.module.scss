@@ -39,7 +39,7 @@
   height: 20px;
   border-radius: 20px;
 
-  color: $neutral-dark-clr-2;
+  color: $neutral-dark-clr-1;
   transition: color $animation-slow;
 }
 
@@ -50,6 +50,7 @@
 
 .iconToggle {
   color: $main-light-clr;
+  transition: color $animation-medium;
 }
 
 .toggleInput:checked + .toggleLabel :first-child {

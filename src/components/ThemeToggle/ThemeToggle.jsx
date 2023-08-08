@@ -3,7 +3,7 @@ import { ImSun } from 'react-icons/im';
 import { MdOutlineDarkMode } from 'react-icons/md';
 import scss from './ThemeToggle.module.scss';
 
-const ThemeToggle = () => {
+export const ThemeToggle = () => {
   const [isLightMode, setIsLightMode] = useState(false);
   const [togglePosition, setTogglePosition] = useState(false);
 
@@ -37,5 +37,3 @@ const ThemeToggle = () => {
     </div>
   );
 };
-
-export default ThemeToggle;
