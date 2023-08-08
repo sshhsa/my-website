@@ -1,0 +1,59 @@
+@import 'index.scss';
+
+.themeToggle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: inline-block;
+}
+
+.toggleInput {
+  display: none;
+}
+
+.toggleLabel {
+  display: inline-block;
+  padding: 3px;
+  border-radius: 20px;
+  cursor: pointer;
+  user-select: none;
+
+  background-color: $neutral-light-clr-1;
+  transition: background-color $animation-slow;
+}
+
+.toggleText {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+
+  color: $neutral-dark-clr-2;
+  transition: color $animation-slow;
+}
+
+.toggleInput:checked + .toggleLabel {
+  background-color: $main-light-clr;
+}
+
+.toggleInput:checked + .toggleLabel .toggleText:first-child {
+  color: $neutral-dark-clr-1;
+}
+
+.toggleInput:checked + .toggleLabel .toggleText:last-child {
+  color: $accent-clr-1;
+}
+
+.toggleCircle {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  background-color: $accent-clr-1;
+  transform: translateY(-50%);
+  transition: transform $animation-slow;
+}

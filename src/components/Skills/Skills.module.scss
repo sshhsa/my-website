@@ -1,23 +1,36 @@
 @import 'index.scss';
 
 .boxSkills {
-  height: 100vh;
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  min-height: 100vh;
 }
 
 .listSkills {
-  margin-top: 10px;
-  list-style-type: circle;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 600px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 800px;
+  }
 }
 
 .skill {
+  padding: 10px 20px;
   font-size: $text-font-phone;
-  letter-spacing: $default-letter-spacing;
-  color: $accent-clr-1;
+  border-radius: $default-brd-rad;
+
+  color: $main-light-clr;
+  background-color: rgba(36, 32, 32, 0.616);
 
   @media screen and (min-width: 768px) {
     font-size: $text-font-tablet;
@@ -28,6 +41,7 @@
   }
 }
 
-.valueSkill {
-  color: $main-light-clr;
+.accent {
+  color: $accent-clr-1;
+  font-size: inherit;
 }

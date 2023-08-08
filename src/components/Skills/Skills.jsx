@@ -9,30 +9,35 @@ export const Skills = () => {
         <div className={scss.boxSkills}>
           <Title title="Skills" />
           <ul className={scss.listSkills}>
+            <li className={scss.skill}>GIT</li>
             <li className={scss.skill}>
-              <span className={scss.valueSkill}>HTML</span>
+              HTML<span className={scss.accent}>*</span>
             </li>
             <li className={scss.skill}>
-              <span className={scss.valueSkill}>CSS/SCSS</span>
+              CSS/SCSS<span className={scss.accent}>*</span>
+            </li>
+            <li className={scss.skill}>SASS/LESS</li>
+            <li className={scss.skill}>
+              Java Script<span className={scss.accent}>*</span>
             </li>
             <li className={scss.skill}>
-              <span className={scss.valueSkill}> SASS/LESS</span>
+              React.js<span className={scss.accent}>*</span>
             </li>
             <li className={scss.skill}>
-              <span className={scss.valueSkill}> Java Script</span>
+              Redux<span className={scss.accent}>*</span>
+            </li>
+            <li className={scss.skill}>Formik</li>
+            <li className={scss.skill}>Yup</li>
+            <li className={scss.skill}>i18Next</li>
+            <li className={scss.skill}>Swiper</li>
+            <li className={scss.skill}>
+              React Native<span className={scss.accent}>*</span>
             </li>
             <li className={scss.skill}>
-              <span className={scss.valueSkill}> React.js</span>
+              Node.js<span className={scss.accent}>*</span>
             </li>
-            <li className={scss.skill}>
-              <span className={scss.valueSkill}> Redux</span>
-            </li>
-            <li className={scss.skill}>
-              <span className={scss.valueSkill}> React Native</span>
-            </li>
-            <li className={scss.skill}>
-              <span className={scss.valueSkill}> Node.js</span>
-            </li>
+            <li className={scss.skill}>Parcel</li>
+            <li className={scss.skill}>Axios</li>
           </ul>
         </div>
       </Container>

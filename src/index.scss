@@ -29,6 +29,8 @@ $animation-slow: 1200ms cubic-bezier(0.19, 1, 0.22, 1);
 
 body {
   font-family: 'Kreadon-M';
+  letter-spacing: $default-letter-spacing;
+  user-select: none;
 }
 
 ul,
