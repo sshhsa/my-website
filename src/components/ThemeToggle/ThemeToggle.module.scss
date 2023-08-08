@@ -2,8 +2,13 @@
 
 .themeToggle {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 10px;
+  left: 10px;
+
+  @media screen and (min-width: 1440px) {
+    top: 20px;
+    left: 20px;
+  }
 }
 
 .toggleInput {
@@ -47,6 +52,10 @@
   color: $main-light-clr;
 }
 
+.toggleInput:checked + .toggleLabel :first-child {
+  color: $accent-clr-1;
+}
+
 .toggleCircle {
   position: absolute;
   top: 5px;
@@ -57,11 +66,11 @@
   height: 25px;
   border-radius: 50%;
 
-  background-color: $main-light-clr;
+  background-color: $accent-clr-1;
   transform: translateY(-50%);
   transition: transform $animation-slow, background-color $animation-medium;
 }
 
-.toggleInput:checked .toggleCircle {
-  background-color: $accent-clr-1;
+.toggleInput:checked + .toggleLabel .toggleCircle {
+  background-color: $main-light-clr;
 }
