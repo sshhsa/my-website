@@ -1,10 +1,5 @@
 @import 'index.scss';
 
-.sectionSkills {
-  color: $main-light-clr;
-  background-color: $neutral-dark-clr-1;
-}
-
 .boxSkills {
   height: 100vh;
   flex-direction: column;
@@ -21,6 +16,7 @@
 
 .skill {
   font-size: $text-font-phone;
+  letter-spacing: $default-letter-spacing;
   color: $accent-clr-1;
 
   @media screen and (min-width: 768px) {

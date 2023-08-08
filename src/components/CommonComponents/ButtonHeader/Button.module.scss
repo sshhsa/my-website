@@ -6,6 +6,7 @@
 
   font-size: 14px;
   font-weight: 600;
+  letter-spacing: $default-letter-spacing;
   text-transform: uppercase;
   text-decoration: none;
 
@@ -30,7 +31,7 @@
 
 .buttonHeader:hover,
 .buttonHeader:focus {
-  color: $neutral-light-clr-1;
+  color: $accent-clr-1;
 }
 
 .active {

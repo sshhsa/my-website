@@ -63,9 +63,11 @@ $text-position-desktop: 90px;
   margin-top: $default-margin-phone;
   padding: 8px 16px;
 
-  text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;
+  letter-spacing: $default-letter-spacing;
+  text-transform: uppercase;
+  text-decoration: none;
 
   border: none;
   border-radius: $default-brd-rad;

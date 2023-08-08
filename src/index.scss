@@ -13,6 +13,7 @@ $default-margin-desktop: 72px;
 $text-font-phone: 18px;
 $text-font-tablet: 20px;
 $text-font-desktop: 22px;
+$default-letter-spacing: 1.3px;
 
 $default-brd-rad: 4px;
 $animation-fast: 400ms cubic-bezier(0.19, 1, 0.22, 1);
@@ -43,6 +44,8 @@ img {
 
 section {
   padding: $default-margin-phone 0px;
+  color: $main-light-clr;
+  background-color: $neutral-dark-clr-1;
 
   @media screen and (min-width: 768px) {
     padding: $default-margin-tablet 0px;

@@ -17,8 +17,6 @@ $title-desktop: 30px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  background-color: $neutral-dark-clr-2;
 }
 
 .boxInfo {
@@ -95,6 +93,7 @@ $title-desktop: 30px;
   margin-bottom: 15px;
   font-size: $title-phone;
   font-weight: 400;
+  letter-spacing: $default-letter-spacing;
 
   @media screen and (min-width: 768px) {
     font-size: $title-tablet;
@@ -122,10 +121,11 @@ $title-desktop: 30px;
 }
 
 .description {
-  max-width: 300px;
   padding: 5px;
+  max-width: 300px;
 
   font-size: $text-font-phone;
+  letter-spacing: $default-letter-spacing;
   border-radius: $default-brd-rad;
 
   background-color: $neutral-dark-clr-1;
