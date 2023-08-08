@@ -6,6 +6,7 @@
   margin-top: $default-margin-phone;
   margin-bottom: $default-margin-phone;
 
+  font-family: 'Kreadon-M';
   font-size: 32px;
   font-weight: 500;
   letter-spacing: $default-letter-spacing;
@@ -22,6 +23,7 @@
   @media screen and (min-width: 1440px) {
     margin-top: $default-margin-desktop;
     margin-bottom: $default-margin-desktop;
+    font-family: 'Kreadon-B';
     font-size: 64px;
   }
 }
@@ -32,10 +34,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  font-family: 'Kreadon-B';
+  font-family: inherit;
   font-size: 300%;
   z-index: 1;
   white-space: nowrap;
 
-  color: rgba(48, 45, 45, 0.479);
+  color: rgba(49, 48, 48, 0.384);
 }
