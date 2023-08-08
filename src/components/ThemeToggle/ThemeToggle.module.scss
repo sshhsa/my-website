@@ -2,9 +2,8 @@
 
 .themeToggle {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  display: inline-block;
+  top: 20px;
+  left: 20px;
 }
 
 .toggleInput {
@@ -12,19 +11,27 @@
 }
 
 .toggleLabel {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 25px;
+  width: 70px;
   padding: 3px;
   border-radius: 20px;
   cursor: pointer;
   user-select: none;
+  border: 2px solid $main-light-clr;
 
-  background-color: $neutral-light-clr-1;
-  transition: background-color $animation-slow;
+  background-color: transparent;
+  transition: background-color $animation-slow, border $animation-medium;
 }
 
-.toggleText {
+.toggleIcon {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 20px 10px;
+  width: 20px;
+  height: 20px;
   border-radius: 20px;
 
   color: $neutral-dark-clr-2;
@@ -32,28 +39,29 @@
 }
 
 .toggleInput:checked + .toggleLabel {
-  background-color: $main-light-clr;
+  border: 2px solid $accent-clr-1;
+  color: $main-light-clr;
 }
 
-.toggleInput:checked + .toggleLabel .toggleText:first-child {
-  color: $neutral-dark-clr-1;
-}
-
-.toggleInput:checked + .toggleLabel .toggleText:last-child {
-  color: $accent-clr-1;
+.iconToggle {
+  color: $main-light-clr;
 }
 
 .toggleCircle {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 5px;
+  left: 5px;
 
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
 
-  background-color: $accent-clr-1;
+  background-color: $main-light-clr;
   transform: translateY(-50%);
-  transition: transform $animation-slow;
+  transition: transform $animation-slow, background-color $animation-medium;
+}
+
+.toggleInput:checked .toggleCircle {
+  background-color: $accent-clr-1;
 }

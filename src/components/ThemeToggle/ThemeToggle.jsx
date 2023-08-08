@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { ImSun } from 'react-icons/im';
+import { MdOutlineDarkMode } from 'react-icons/md';
 import scss from './ThemeToggle.module.scss';
 
 const ThemeToggle = () => {
@@ -11,7 +13,7 @@ const ThemeToggle = () => {
   };
 
   const toggleStyles = {
-    transform: togglePosition ? 'translateX(100%)' : 'translateX(0)',
+    transform: togglePosition ? 'translateX(180%)' : 'translateX(0)',
   };
 
   return (
@@ -24,8 +26,12 @@ const ThemeToggle = () => {
         onChange={handleToggle}
       />
       <label htmlFor="themeToggle" className={scss.toggleLabel}>
-        <span className={scss.toggleText}>Dark</span>
-        <span className={scss.toggleText}>Light</span>
+        <span className={scss.toggleIcon}>
+          <ImSun className={scss.iconToggle} />
+        </span>
+        <span className={scss.toggleIcon}>
+          <MdOutlineDarkMode className={scss.iconToggle} />
+        </span>
         <span className={scss.toggleCircle} style={toggleStyles}></span>
       </label>
     </div>
