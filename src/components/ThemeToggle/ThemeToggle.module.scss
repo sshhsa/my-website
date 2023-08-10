@@ -66,12 +66,15 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
+  filter: drop-shadow(0px 0px 4px $accent-clr-1);
 
   background-color: $accent-clr-1;
   transform: translateY(-50%);
-  transition: transform $animation-slow, background-color $animation-medium;
+  transition: transform $animation-slow, background-color $animation-medium,
+    filter $animation-medium;
 }
 
 .toggleInput:checked + .toggleLabel .toggleCircle {
+  filter: drop-shadow(0px 0px 4px $neutral-light-clr-1);
   background-color: $main-light-clr;
 }
