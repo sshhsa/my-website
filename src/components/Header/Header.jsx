@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container } from 'components/CommonComponents/Container/Container';
+import Container from 'components/CommonComponents/Container/Container';
 import { ButtonHeader } from 'components/CommonComponents/ButtonHeader/Button';
 import scss from './Header.module.scss';
 import { ThemeToggle } from 'components/ThemeToggle/ThemeToggle';

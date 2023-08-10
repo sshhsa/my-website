@@ -1,5 +1,5 @@
-import { Container } from 'components/CommonComponents/Container/Container';
-import { Title } from 'components/CommonComponents/Title/Title';
+import Container from 'components/CommonComponents/Container/Container';
+import Title from 'components/CommonComponents/Title/Title';
 import scss from './ContactMe.module.scss';
 
 const ContactMe = () => {

@@ -1,4 +1,4 @@
-import { Container } from 'components/CommonComponents/Container/Container';
+import Container from 'components/CommonComponents/Container/Container';
 import scss from './NotFound.module.scss';
 
 const NotFound = () => {

@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { Container } from 'components/CommonComponents/Container/Container';
+import Container from 'components/CommonComponents/Container/Container';
 import scss from './Hero.module.scss';
 
 const Hero = () => {
