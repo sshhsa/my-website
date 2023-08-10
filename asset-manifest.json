@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-website/static/css/main.ef3fbda0.css",
-    "main.js": "/my-website/static/js/main.f9df7597.js",
+    "main.js": "/my-website/static/js/main.c5479cb3.js",
     "static/media/KreadonVF.ttf": "/my-website/static/media/KreadonVF.54091657633572fc33fa.ttf",
     "static/media/Kreadon-EB.otf": "/my-website/static/media/Kreadon-EB.9f1c39f77033aa4cf1ed.otf",
     "static/media/Kreadon-B.otf": "/my-website/static/media/Kreadon-B.6b43769cad3e4455d7a0.otf",
@@ -12,10 +12,10 @@
     "static/media/Kreadon-M.otf": "/my-website/static/media/Kreadon-M.da8c537b3c85c896ebb3.otf",
     "index.html": "/my-website/index.html",
     "main.ef3fbda0.css.map": "/my-website/static/css/main.ef3fbda0.css.map",
-    "main.f9df7597.js.map": "/my-website/static/js/main.f9df7597.js.map"
+    "main.c5479cb3.js.map": "/my-website/static/js/main.c5479cb3.js.map"
   },
   "entrypoints": [
     "static/css/main.ef3fbda0.css",
-    "static/js/main.f9df7597.js"
+    "static/js/main.c5479cb3.js"
   ]
 }
