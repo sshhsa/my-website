@@ -1,8 +1,8 @@
+import { Container } from 'components/CommonComponents/Container/Container';
 import { Title } from 'components/CommonComponents/Title/Title';
 import scss from './AboutMe.module.scss';
-import { Container } from 'components/CommonComponents/Container/Container';
 
-export const AboutMe = () => {
+const AboutMe = () => {
   return (
     <section className={scss.sectionAboutMe}>
       <Container>
@@ -39,3 +39,5 @@ export const AboutMe = () => {
     </section>
   );
 };
+
+export default AboutMe;

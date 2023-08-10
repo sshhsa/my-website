@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import { Container } from 'components/CommonComponents/Container/Container';
 import scss from './Hero.module.scss';
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <section className={scss.sectionHero}>
       <Container>
@@ -19,3 +19,5 @@ export const Hero = () => {
     </section>
   );
 };
+
+export default Hero;

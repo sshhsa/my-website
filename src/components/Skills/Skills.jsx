@@ -1,8 +1,8 @@
+import { Container } from 'components/CommonComponents/Container/Container';
 import { Title } from 'components/CommonComponents/Title/Title';
 import scss from './Skills.module.scss';
-import { Container } from 'components/CommonComponents/Container/Container';
 
-export const Skills = () => {
+const Skills = () => {
   return (
     <section className={scss.sectionSkills}>
       <Container>
@@ -44,3 +44,5 @@ export const Skills = () => {
     </section>
   );
 };
+
+export default Skills;

@@ -1,10 +1,15 @@
+import { Container } from 'components/CommonComponents/Container/Container';
 import { Title } from 'components/CommonComponents/Title/Title';
 import scss from './Portfolio.module.scss';
 
-export const Portfolio = () => {
+const Portfolio = () => {
   return (
     <section className={scss.sectionPortfolio}>
-      <Title title="Portfolio" />
+      <Container>
+        <Title title="Portfolio" />
+      </Container>
     </section>
   );
 };
+
+export default Portfolio;
