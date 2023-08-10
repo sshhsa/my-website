@@ -1,5 +1,12 @@
+import { Container } from 'components/CommonComponents/Container/Container';
 import scss from './NotFound.module.scss';
 
-export const NotFound = () => {
-  return <section className={scss.sectionNotFound}>Not Found Page</section>;
+const NotFound = () => {
+  return (
+    <section className={scss.sectionNotFound}>
+      <Container>Not Found Page</Container>
+    </section>
+  );
 };
+
+export default NotFound;
