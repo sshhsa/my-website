@@ -1,7 +1,5 @@
 @import 'index.scss';
 
-$button-brd: 4px;
-
 .buttonNavLink {
   margin-top: $default-margin-phone;
   padding: 8px 16px;
@@ -19,7 +17,7 @@ $button-brd: 4px;
 
   color: $main-light-clr;
   background-color: $accent-clr-1;
-  transition: background-color $animation-medium;
+  transition: background-color $animation-medium, color $animation-medium;
 
   @media screen and (min-width: 768px) {
     padding: 12px 24px;
@@ -34,5 +32,6 @@ $button-brd: 4px;
 
 .buttonNavLink:hover,
 .buttonNavLink:focus {
-  background-color: #dd5a2e;
+  color: $accent-clr-1;
+  background-color: $neutral-dark-clr-1;
 }

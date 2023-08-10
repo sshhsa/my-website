@@ -1,0 +1,43 @@
+@import './variables.scss';
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Kreadon-M';
+  letter-spacing: $default-letter-spacing;
+  user-select: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+section {
+  padding: $default-margin-phone 0px;
+  color: $main-light-clr;
+  background-color: $neutral-dark-clr-1;
+
+  @media screen and (min-width: 768px) {
+    padding: $default-margin-tablet 0px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: $default-margin-desktop 0px;
+  }
+}
+
+#shadow-host-companion {
+  display: none;
+}
