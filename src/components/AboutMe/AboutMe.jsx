@@ -15,24 +15,14 @@ const AboutMe = () => {
             <h2 className={scss.myName}>
               My name is <span className={scss.accentText}>Alex</span>
             </h2>
-            <div className={scss.boxDescription}>
-              <p className={scss.description}>
-                Hello! I'm Alex Marynkevych. I have a strong desire to improve
-                my hard and soft skills.
-              </p>
-              <p className={scss.description}>
-                I am particularly proficient in Front-end and Back-end
-                developments.
-              </p>
-              <p className={scss.description}>
-                Although I only have one year of experience, I am capable of
-                creating functional websites according to strict requirements.
-              </p>
-              <p className={scss.description}>
-                My main goal is to become a sought-after Full-Stack developer
-                for your company.
-              </p>
-            </div>
+            <p className={scss.description}>
+              Hello! I'm Alex Marynkevych. I have a strong desire to improve my
+              hard and soft skills. I am particularly proficient in Front-end
+              and Back-end developments. Although I only have one year of
+              experience, I am capable of creating functional websites according
+              to strict requirements. My main goal is to become a sought-after
+              Full-Stack developer for your company.
+            </p>
           </div>
         </div>
       </Container>

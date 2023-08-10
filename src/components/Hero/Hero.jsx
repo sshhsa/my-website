@@ -1,5 +1,5 @@
-import { NavLink } from 'react-router-dom';
 import Container from 'components/CommonComponents/Container/Container';
+import ButtonNavLink from 'components/CommonComponents/ButtonNavLink/ButtonNavLink';
 import scss from './Hero.module.scss';
 
 const Hero = () => {
@@ -11,9 +11,7 @@ const Hero = () => {
           <h1 className={scss.heroPosition}>
             Full-Stack developer<span className={scss.point}>.</span>
           </h1>
-          <NavLink to="/contact" className={scss.buttonHero}>
-            Contact Me
-          </NavLink>
+          <ButtonNavLink text="Contact Me"></ButtonNavLink>
         </div>
       </Container>
     </section>

@@ -1,0 +1,38 @@
+@import 'index.scss';
+
+$button-brd: 4px;
+
+.buttonNavLink {
+  margin-top: $default-margin-phone;
+  padding: 8px 16px;
+
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: $default-letter-spacing;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: none;
+  border-radius: $default-brd-rad;
+  outline: none;
+  cursor: pointer;
+
+  color: $main-light-clr;
+  background-color: $accent-clr-1;
+  transition: background-color $animation-medium;
+
+  @media screen and (min-width: 768px) {
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 16px 32px;
+    font-size: 20px;
+  }
+}
+
+.buttonNavLink:hover,
+.buttonNavLink:focus {
+  background-color: #dd5a2e;
+}
