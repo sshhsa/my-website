@@ -1,25 +1,29 @@
 import { Routes, Route } from 'react-router-dom';
 import SharedLayout from './SharedLayout/SharedLayout';
 import { Scrollbars } from 'react-custom-scrollbars-2';
-import { lazy } from 'react';
+import { useState, useEffect, lazy } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 
 import Hero from './Hero/Hero';
 import Skills from './Skills/Skills';
 import AboutMe from './AboutMe/AboutMe';
 import Portfolio from './Portfolio/Portfolio';
 import ContactMe from './ContactMe/ContactMe';
-// import NotFound from './NotFound/NotFound';
-
-// const Skills = lazy(() => './Skills/Skills');
-// const AboutMe = lazy(() => './AboutMe/AboutMe');
-// const Portfolio = lazy(() => import('./Portfolio/Portfolio'));
-// const ContactMe = lazy(() => import('./ContactMe/ContactMe'));
-// const NotFound = lazy(() => import('./NotFound/NotFound'));
 const NotFound = lazy(() => import('./NotFound/NotFound'));
 
 export const App = () => {
+  const [isToast, setIsToast] = useState(false);
+
+  useEffect(() => {
+    if (!isToast) {
+      toast.success('Welcome!');
+      setIsToast(true);
+    }
+  }, [isToast]);
+
   return (
     <div style={{ width: '100%', height: '100vh' }}>
+      <Toaster />
       <Scrollbars style={{ width: '100%', height: '100%' }}>
         <Routes>
           <Route path="/" element={<SharedLayout />}>
