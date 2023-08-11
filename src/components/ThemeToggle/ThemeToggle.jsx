@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { ImSun } from 'react-icons/im';
-import { MdOutlineDarkMode } from 'react-icons/md';
+import { FaRegSun } from 'react-icons/fa';
+import { BsMoonStars } from 'react-icons/bs';
 import scss from './ThemeToggle.module.scss';
 
 export const ThemeToggle = () => {
@@ -27,10 +27,10 @@ export const ThemeToggle = () => {
       />
       <label htmlFor="themeToggle" className={scss.toggleLabel}>
         <span className={scss.toggleIcon}>
-          <ImSun className={scss.iconToggle} />
+          <FaRegSun className={scss.iconToggle} />
         </span>
         <span className={scss.toggleIcon}>
-          <MdOutlineDarkMode className={scss.iconToggle} />
+          <BsMoonStars className={scss.iconToggle} />
         </span>
         <span className={scss.toggleCircle} style={toggleStyles}></span>
       </label>

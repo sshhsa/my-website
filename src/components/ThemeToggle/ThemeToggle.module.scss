@@ -75,7 +75,7 @@
 
   background-color: $accent-clr-1;
   transform: translateY(-50%);
-  transition: transform $animation-slow, background-color $animation-medium,
+  transition: transform $animation-add-1, background-color $animation-medium,
     filter $animation-medium;
 }
 
