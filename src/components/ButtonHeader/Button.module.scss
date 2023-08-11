@@ -36,36 +36,35 @@
 
 .active {
   color: $accent-clr-1;
+}
 
-  &:after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+.activeIndicator {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 3px;
+  width: 100%;
+  border-top-left-radius: $default-brd-rad;
+  border-top-right-radius: $default-brd-rad;
+  color: $accent-clr-1;
+  background-color: $accent-clr-1;
+  transform-origin: center;
 
-    content: '';
-    display: block;
-    height: 3px;
-    width: 100%;
-
-    border-top-left-radius: $default-brd-rad;
-    border-top-right-radius: $default-brd-rad;
-
-    color: $accent-clr-1;
-    background-color: $accent-clr-1;
-
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform $animation-medium;
-
-    @media screen and (min-width: 768px) {
-      height: 4px;
-    }
+  @media screen and (min-width: 768px) {
+    height: 4px;
   }
 
-  &:hover,
-  &:focus {
-    &:after {
-      transform: scaleX(1);
+  animation: scaleAnimation $animation-medium 0.5;
+
+  @keyframes scaleAnimation {
+    0%,
+    100% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
     }
   }
 }

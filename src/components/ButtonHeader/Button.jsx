@@ -12,6 +12,7 @@ export const ButtonHeader = ({ buttonValue, link }) => {
       className={`${scss.buttonHeader} ${isActive ? scss.active : ''}`}
     >
       {buttonValue}
+      {isActive && <div className={scss.activeIndicator}></div>}
     </NavLink>
   );
 };

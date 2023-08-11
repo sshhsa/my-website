@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import scss from './ButtonNavLink.module.scss';
 
-const ButtonNavLink = ({ text }) => {
+const ButtonNavLink = ({ text, link }) => {
   return (
-    <NavLink to="/contact" className={scss.buttonNavLink}>
+    <NavLink to={link} className={scss.buttonNavLink}>
       {text}
     </NavLink>
   );
@@ -12,6 +12,7 @@ const ButtonNavLink = ({ text }) => {
 
 ButtonNavLink.propTypes = {
   text: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
 };
 
 export default ButtonNavLink;

@@ -11,7 +11,7 @@ const Hero = () => {
           <h1 className={scss.heroPosition}>
             Full-Stack developer<span className={scss.point}>.</span>
           </h1>
-          <ButtonNavLink text="Contact Me"></ButtonNavLink>
+          <ButtonNavLink text="Contact Me" link="/contact"></ButtonNavLink>
         </div>
       </Container>
     </section>
