@@ -1,0 +1,77 @@
+[
+    {
+        "id": "dNqYp48LbezM9xTFlWoPz",
+        "skill": "GIT",
+        "marked": false
+    },
+    {
+        "id": "eOrZq59McfaN0yUGmXqKx",
+        "skill": "HTML",
+        "marked": true
+    },
+    {
+        "id": "fPsAr60NdgwO1zVHnYrLy",
+        "skill": "CSS/SCSS",
+        "marked": true
+    },
+    {
+        "id": "gQtBs71OehxP2aWIoZsMz",
+        "skill": "SASS/LESS",
+        "marked": false
+    },
+    {
+        "id": "hRuCt82PfiyQ3bXJpAtNa",
+        "skill": "Java Script",
+        "marked": true
+    },
+    {
+        "id": "iSvDu93QgjzR4cYKqBuOb",
+        "skill": "React.js",
+        "marked": true
+    },
+    {
+        "id": "jTwEv04RhkA5dZLrCvPc",
+        "skill": "Redux",
+        "marked": true
+    },
+    {
+        "id": "kUxFw15SilbE6eAMwQdSd",
+        "skill": "Formik",
+        "marked": false
+    },
+    {
+        "id": "lVyGx26TjmcF7fBNxReTe",
+        "skill": "Yup",
+        "marked": false
+    },
+    {
+        "id": "mWzHy37UkndG8gCOyUfUf",
+        "skill": "i18Next",
+        "marked": false
+    },
+    {
+        "id": "nXaIz48VjwoJ9kBFmRpZq",
+        "skill": "Swiper",
+        "marked": false
+    },
+    {
+        "id": "oYbJa59WkxpK0lCGnSqFr",
+        "skill": "React Native",
+        "marked": true
+    },
+    {
+        "id": "pZcKb60XlyqL1mDHoTrGs",
+        "skill": "Node.js",
+        "marked": true
+    },
+    {
+        "id": "qAdLc71YmzrM2nEIpUsHt",
+        "skill": "Parcel",
+        "marked": false
+    },
+    {
+        "id": "rBeMd82ZnasN3oFJqVtIu",
+        "skill": "Axios",
+        "marked": false
+    }
+]

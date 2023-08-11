@@ -1,5 +1,6 @@
 import Container from 'components/CommonComponents/Container/Container';
 import Title from 'components/CommonComponents/Title/Title';
+import skills from '../../data/skills.json';
 import scss from './Skills.module.scss';
 
 const Skills = () => {
@@ -9,35 +10,14 @@ const Skills = () => {
         <div className={scss.boxSkills}>
           <Title title="Skills" />
           <ul className={scss.listSkills}>
-            <li className={scss.skill}>GIT</li>
-            <li className={scss.skill}>
-              HTML<span className={scss.accent}>*</span>
-            </li>
-            <li className={scss.skill}>
-              CSS/SCSS<span className={scss.accent}>*</span>
-            </li>
-            <li className={scss.skill}>SASS/LESS</li>
-            <li className={scss.skill}>
-              Java Script<span className={scss.accent}>*</span>
-            </li>
-            <li className={scss.skill}>
-              React.js<span className={scss.accent}>*</span>
-            </li>
-            <li className={scss.skill}>
-              Redux<span className={scss.accent}>*</span>
-            </li>
-            <li className={scss.skill}>Formik</li>
-            <li className={scss.skill}>Yup</li>
-            <li className={scss.skill}>i18Next</li>
-            <li className={scss.skill}>Swiper</li>
-            <li className={scss.skill}>
-              React Native<span className={scss.accent}>*</span>
-            </li>
-            <li className={scss.skill}>
-              Node.js<span className={scss.accent}>*</span>
-            </li>
-            <li className={scss.skill}>Parcel</li>
-            <li className={scss.skill}>Axios</li>
+            {skills.map(skill => {
+              return (
+                <li key={skill.id} className={scss.skill}>
+                  {skill.skill}
+                  {skill.marked && <span className={scss.accent}>*</span>}
+                </li>
+              );
+            })}
           </ul>
         </div>
       </Container>
@@ -46,3 +26,14 @@ const Skills = () => {
 };
 
 export default Skills;
+
+// sCfNe93AobtO4pGKrWuJv;
+// tDgOf04BpcuP5qHLsXvKw;
+// uEhPg15CqdvQ6rIMtYwLx;
+// vFjQh26DrweR7sJNuZmMy;
+// wGkRi37EsxfS8tKOvAnNz;
+// xHlSj48FtygT9uLPwBoOa;
+// yImTk59GuzaU0vMQxPpPb;
+// zJnUl60HvbaV1wNRyQqQc;
+// aKoVm71IwcxC2xOSzRrRd;
+// bLpWn82JyvdD3yPTaSsSe;

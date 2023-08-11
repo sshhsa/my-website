@@ -1,0 +1,27 @@
+[
+    {
+        "id": "rTbFg28DajkL3mNPeGhjY",
+        "buttonValue": "Home",
+        "link": "/"
+    },
+    {
+        "id": "uVnIz91XplkM4aQBcDfwE",
+        "buttonValue": "About me",
+        "link": "/about"
+    },
+    {
+        "id": "wKoHb63ZtnmP5qREiSxvU",
+        "buttonValue": "Skills",
+        "link": "/skills"
+    },
+    {
+        "id": "skggW76Jtbfd5eWJHrlsH",
+        "buttonValue": "Portfolio",
+        "link": "/portfolio"
+    },
+    {
+        "id": "aOdXi07PbuzF9vWJcnlDy",
+        "buttonValue": "Contact Me",
+        "link": "/contact"
+    }
+]
