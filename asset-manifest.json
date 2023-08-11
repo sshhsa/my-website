@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.4f34d042.css",
-    "main.js": "/my-website/static/js/main.f117ad88.js",
+    "main.css": "/my-website/static/css/main.c940b7ce.css",
+    "main.js": "/my-website/static/js/main.02e42466.js",
+    "static/css/336.8eef896f.chunk.css": "/my-website/static/css/336.8eef896f.chunk.css",
+    "static/js/336.b28e019a.chunk.js": "/my-website/static/js/336.b28e019a.chunk.js",
     "static/media/KreadonVF.ttf": "/my-website/static/media/KreadonVF.54091657633572fc33fa.ttf",
     "static/media/Kreadon-EB.otf": "/my-website/static/media/Kreadon-EB.9f1c39f77033aa4cf1ed.otf",
     "static/media/Kreadon-B.otf": "/my-website/static/media/Kreadon-B.6b43769cad3e4455d7a0.otf",
@@ -11,11 +13,13 @@
     "static/media/Kreadon-EL.otf": "/my-website/static/media/Kreadon-EL.bc0cb868b0be8a0f3334.otf",
     "static/media/Kreadon-M.otf": "/my-website/static/media/Kreadon-M.da8c537b3c85c896ebb3.otf",
     "index.html": "/my-website/index.html",
-    "main.4f34d042.css.map": "/my-website/static/css/main.4f34d042.css.map",
-    "main.f117ad88.js.map": "/my-website/static/js/main.f117ad88.js.map"
+    "main.c940b7ce.css.map": "/my-website/static/css/main.c940b7ce.css.map",
+    "main.02e42466.js.map": "/my-website/static/js/main.02e42466.js.map",
+    "336.8eef896f.chunk.css.map": "/my-website/static/css/336.8eef896f.chunk.css.map",
+    "336.b28e019a.chunk.js.map": "/my-website/static/js/336.b28e019a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f34d042.css",
-    "static/js/main.f117ad88.js"
+    "static/css/main.c940b7ce.css",
+    "static/js/main.02e42466.js"
   ]
 }
