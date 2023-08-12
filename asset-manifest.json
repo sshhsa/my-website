@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.c940b7ce.css",
-    "main.js": "/my-website/static/js/main.30fc85b2.js",
+    "main.css": "/my-website/static/css/main.08f25639.css",
+    "main.js": "/my-website/static/js/main.db63d830.js",
     "static/css/336.8eef896f.chunk.css": "/my-website/static/css/336.8eef896f.chunk.css",
     "static/js/336.b28e019a.chunk.js": "/my-website/static/js/336.b28e019a.chunk.js",
     "static/media/KreadonVF.ttf": "/my-website/static/media/KreadonVF.54091657633572fc33fa.ttf",
@@ -13,13 +13,13 @@
     "static/media/Kreadon-EL.otf": "/my-website/static/media/Kreadon-EL.bc0cb868b0be8a0f3334.otf",
     "static/media/Kreadon-M.otf": "/my-website/static/media/Kreadon-M.da8c537b3c85c896ebb3.otf",
     "index.html": "/my-website/index.html",
-    "main.c940b7ce.css.map": "/my-website/static/css/main.c940b7ce.css.map",
-    "main.30fc85b2.js.map": "/my-website/static/js/main.30fc85b2.js.map",
+    "main.08f25639.css.map": "/my-website/static/css/main.08f25639.css.map",
+    "main.db63d830.js.map": "/my-website/static/js/main.db63d830.js.map",
     "336.8eef896f.chunk.css.map": "/my-website/static/css/336.8eef896f.chunk.css.map",
     "336.b28e019a.chunk.js.map": "/my-website/static/js/336.b28e019a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c940b7ce.css",
-    "static/js/main.30fc85b2.js"
+    "static/css/main.08f25639.css",
+    "static/js/main.db63d830.js"
   ]
 }
