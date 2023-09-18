@@ -6,6 +6,8 @@
   justify-content: center;
   align-items: center;
   font-size: 40px;
+
+  background-color: $accent-clr-1;
 }
 
 .formContact {
@@ -24,11 +26,12 @@
 }
 
 .fieldFormik {
+  position: relative;
   padding: 5px 10px;
   font-size: 18px;
   border: none;
   border: 2px solid rgba(0, 0, 0, 0.4);
-  border-radius: var(--default-brd-rad);
+  border-radius: $default-brd-rad;
 
   background-color: transparent;
 }
@@ -44,4 +47,38 @@
 
   font-size: 16px;
   color: var(--neutral-accent-clr-2);
+}
+
+.buttonSumit {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-505, -50%);
+  padding: 10px;
+
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: $default-letter-spacing;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
+
+  border: none;
+  border-radius: $default-brd-rad;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+
+  color: $accent-clr-1;
+  background-color: $main-light-clr;
+
+  transition: background-color $animation-medium;
+}
+
+.buttonSumit:hover,
+.buttonSumit:focus {
+  background-color: $neutral-dark-clr-1;
 }

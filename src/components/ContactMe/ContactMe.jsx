@@ -2,10 +2,11 @@ import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
 import { toast } from 'react-hot-toast';
+import { RiSendPlaneFill } from 'react-icons/ri';
 
 import Container from 'components/CommonComponents/Container/Container';
-import Title from 'components/CommonComponents/Title/Title';
 import LabelForm from 'components/LabelForm/LabelForm';
+import ListItems from './ListItems/ListItems';
 import scss from './ContactMe.module.scss';
 
 const schemaContact = yup.object().shape({
@@ -30,7 +31,6 @@ const ContactMe = () => {
   return (
     <section className={scss.sectionContactMe}>
       <Container>
-        <Title title="Contact" />
         <Formik
           initialValues={{ name: '', text: '' }}
           validationSchema={schemaContact}
@@ -59,9 +59,12 @@ const ContactMe = () => {
                 className={scss.errorMessage}
               />
             </label>
-            <button type="submit">Submit</button>
           </Form>
         </Formik>
+        <button className={scss.buttonSumit} type="submit">
+          Send <RiSendPlaneFill className={scss.sendIcon} />
+        </button>
+        <ListItems />
       </Container>
     </section>
   );
